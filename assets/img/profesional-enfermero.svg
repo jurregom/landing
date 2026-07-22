@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Enfermero con uniforme y carné">
+  <rect width="400" height="500" fill="#efeaf9"/>
+  <circle cx="200" cy="215" r="152" fill="#e2d8f3"/>
+  <path d="M56 96h12M62 90v12" stroke="#2b1656" stroke-width="4" stroke-linecap="round" opacity=".35"/>
+  <path d="M336 168h10M341 163v10" stroke="#2b1656" stroke-width="4" stroke-linecap="round" opacity=".3"/>
+  <!-- cuello -->
+  <path d="M182 292h36v56h-36z" fill="#e0a97e"/>
+  <path d="M182 292h36v18c-6 8-14 12-18 12s-12-4-18-12z" fill="#c88f63"/>
+  <!-- torso: uniforme -->
+  <path d="M64 500c0-96 48-152 136-152s136 56 136 152z" fill="#16a877"/>
+  <path d="M200 348c-14 0-26 5-36 14l36 48 36-48c-10-9-22-14-36-14z" fill="#0e8a5f"/>
+  <path d="M164 354l36 48 36-48" fill="none" stroke="#0c7550" stroke-width="7" stroke-linecap="round"/>
+  <!-- bolsillo con pluma -->
+  <rect x="238" y="436" width="44" height="40" rx="6" fill="#0e8a5f"/>
+  <rect x="248" y="426" width="7" height="26" rx="3.5" fill="#efeaf9"/>
+  <!-- carné colgante -->
+  <path d="M176 372l12 52M224 372l-12 52" fill="none" stroke="#2b1656" stroke-width="6" stroke-linecap="round"/>
+  <rect x="178" y="420" width="44" height="56" rx="8" fill="#ffffff"/>
+  <rect x="178" y="420" width="44" height="14" rx="7" fill="#1bd15f"/>
+  <circle cx="200" cy="452" r="9" fill="#e2d8f3"/>
+  <rect x="188" y="466" width="24" height="5" rx="2.5" fill="#d8dde6"/>
+  <!-- cabeza -->
+  <circle cx="136" cy="248" r="11" fill="#e0a97e"/>
+  <circle cx="264" cy="248" r="11" fill="#e0a97e"/>
+  <ellipse cx="200" cy="240" rx="62" ry="70" fill="#eab68a"/>
+  <!-- cabello corto -->
+  <path d="M136 236c-2-58 28-98 64-98s66 40 64 98c-4-30-14-50-28-60-20 10-52 10-72-2-12 12-22 34-28 62z" fill="#33241a"/>
+</svg>

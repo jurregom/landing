@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Instrumentadora quirúrgica con gorro y tapabocas">
+  <rect width="400" height="500" fill="#e8f5ee"/>
+  <circle cx="200" cy="215" r="152" fill="#d5efdf"/>
+  <path d="M334 110h12M340 104v12" stroke="#0cbb4e" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+  <path d="M54 176h10M59 171v10" stroke="#0cbb4e" stroke-width="4" stroke-linecap="round" opacity=".4"/>
+  <!-- cuello -->
+  <path d="M182 292h36v56h-36z" fill="#c98a5e"/>
+  <path d="M182 292h36v18c-6 8-14 12-18 12s-12-4-18-12z" fill="#b0764e"/>
+  <!-- torso: uniforme quirúrgico -->
+  <path d="M64 500c0-96 48-152 136-152s136 56 136 152z" fill="#2b9d6e"/>
+  <path d="M200 348c-14 0-26 5-36 14l36 48 36-48c-10-9-22-14-36-14z" fill="#1f7f57"/>
+  <path d="M164 354l36 48 36-48" fill="none" stroke="#186a48" stroke-width="7" stroke-linecap="round"/>
+  <!-- orejas -->
+  <circle cx="136" cy="248" r="11" fill="#c98a5e"/>
+  <circle cx="264" cy="248" r="11" fill="#c98a5e"/>
+  <!-- cabeza -->
+  <ellipse cx="200" cy="240" rx="62" ry="70" fill="#d69a6b"/>
+  <!-- tapabocas -->
+  <path d="M146 252c0-8 24-14 54-14s54 6 54 14v26c0 24-24 40-54 40s-54-16-54-40z" fill="#f4f8f6"/>
+  <path d="M154 262c12-4 28-6 46-6s34 2 46 6" fill="none" stroke="#dde7e1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M152 278c12-4 29-6 48-6s36 2 48 6" fill="none" stroke="#dde7e1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M148 254l-12-4M252 254l12-4" stroke="#e3ede7" stroke-width="5" stroke-linecap="round"/>
+  <!-- gorro quirúrgico -->
+  <path d="M134 232c-2-56 28-96 66-96s68 40 66 96c0 6-8 10-12 4-2-22-6-34-10-42-28 8-60 8-88 0-4 8-8 20-10 42-4 6-12 2-12-4z" fill="#237f58"/>
+  <path d="M156 148c26-16 62-16 88 0" fill="none" stroke="#1c6b4a" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="176" cy="170" r="4" fill="#1c6b4a"/>
+  <circle cx="204" cy="160" r="4" fill="#1c6b4a"/>
+  <circle cx="228" cy="172" r="4" fill="#1c6b4a"/>
+</svg>

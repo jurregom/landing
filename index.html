@@ -54,18 +54,22 @@
         </div>
 
         <div class="hero__visual" aria-hidden="true">
-          <article class="jobcard jobcard--back">
-            <header class="jobcard__top">
-              <span class="jobcard__logo" style="--c:#0033A0">HP</span>
-              <div>
-                <h3>Instrumentador(a) quirúrgico(a)</h3>
-                <p>Hospital Pablo Tobón Uribe · Medellín</p>
-              </div>
-            </header>
-            <p class="jobcard__salary">$3,5 a $4 millones</p>
-            <div class="jobcard__tags"><span>Tiempo completo</span><span>Presencial</span></div>
-          </article>
-          <article class="jobcard jobcard--front">
+          <div class="collage">
+            <figure class="collage__pic collage__pic--big">
+              <img src="assets/img/profesional-instrumentadora.svg" alt="" loading="eager" />
+            </figure>
+            <figure class="collage__pic collage__pic--a">
+              <img src="assets/img/profesional-medica.svg" alt="" loading="lazy" />
+            </figure>
+            <figure class="collage__pic collage__pic--b">
+              <img src="assets/img/profesional-enfermero.svg" alt="" loading="lazy" />
+            </figure>
+          </div>
+          <span class="float-chip float-chip--top">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2.5-6 4 12 2.5-6h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Vacantes activas en salud
+          </span>
+          <article class="jobcard jobcard--float">
             <header class="jobcard__top">
               <span class="jobcard__logo" style="--c:#00AEC7">S</span>
               <div>
@@ -74,17 +78,7 @@
               </div>
             </header>
             <p class="jobcard__salary">$4 a $5 millones</p>
-            <div class="jobcard__tags"><span>Término indefinido</span><span>Turnos</span></div>
             <button class="btn btn--primary btn--sm jobcard__cta" data-open-modal tabindex="-1">Postularme</button>
-          </article>
-          <article class="jobcard jobcard--mini">
-            <header class="jobcard__top">
-              <span class="jobcard__logo" style="--c:#C8102E">FSF</span>
-              <div>
-                <h3>Médico(a) general urgencias</h3>
-                <p>Fundación Santa Fe · Bogotá D.C.</p>
-              </div>
-            </header>
           </article>
         </div>
       </div>
@@ -196,22 +190,30 @@
         </header>
         <div class="benefits">
           <article class="benefit">
-            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="7.5" r="1.6" fill="currentColor"/></svg>
+            </span>
             <h3>100% gratuito</h3>
             <p>Registrarte y participar en procesos de selección nunca tendrá costo.</p>
           </article>
           <article class="benefit">
-            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
             <h3>Confidencial y seguro</h3>
             <p>Tus datos se tratan según la ley de protección de datos personales.</p>
           </article>
           <article class="benefit">
-            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M12 10.5v6M9 13.5h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
             <h3>Oportunidades reales</h3>
             <p>Acceso directo a vacantes de las instituciones de salud líderes del país.</p>
           </article>
           <article class="benefit">
-            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <span class="benefit__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 8h10M18 8h2M4 16h2M10 16h10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="8" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8" cy="16" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
             <h3>Tú tienes el control</h3>
             <p>Edita tu perfil cuando quieras y decide qué información compartir.</p>
           </article>

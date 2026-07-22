@@ -11,6 +11,7 @@ SURA, Hospital Pablo Tobón Uribe y Fundación Santa Fe de Bogotá.
 index.html            → Página completa (una sola landing)
 assets/css/styles.css → Estilos con tokens de marca en :root
 assets/js/main.js     → Lógica del modal de registro por pasos
+assets/img/           → Ilustraciones de profesionales del banner
 ```
 
 Es 100% estática: no requiere build ni dependencias. Para verla localmente:
@@ -58,6 +59,14 @@ El logo "magneto empleos" está recreado con tipografía (Baloo 2) y CSS a
 partir del logo oficial: "m" en dos tonos de verde, letras en morado y
 "empleos" en verde. Si se prefiere el asset vectorial oficial, basta con
 reemplazar el bloque `.logo__stack` en `index.html` por el SVG del manual.
+
+## Fotos del banner
+
+El banner del hero usa un collage de tres ilustraciones vectoriales de
+profesionales de la salud (`assets/img/profesional-*.svg`). Para usar
+fotografías reales, reemplaza cada archivo por una foto con la misma ruta y
+nombre (o cambia la extensión en `index.html`). Recomendado: formato vertical
+4:5 (ej. 800×1000), `object-fit: cover` se encarga del recorte.
 
 Pendientes para ajustar con el manual de identidad definitivo:
 

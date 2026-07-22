@@ -48,17 +48,21 @@ función por un `fetch` POST al endpoint correspondiente.
 Los colores están centralizados como variables CSS en `styles.css`:
 
 ```css
---green: #0cbb4e;   /* verde malaquita Magneto (CTA) */
---navy:  #1a324c;   /* azul profundo Magneto */
---bg:    #f4f6f9;   /* gris de fondo, como el buscador de empleos */
+--green:        #0cbb4e;  /* verde Magneto (CTA, "m" derecha) */
+--green-bright: #1bd15f;  /* verde claro del logo ("m" izquierda, "empleos") */
+--navy:         #2b1656;  /* morado profundo del logo Magneto */
+--bg:           #f4f6f9;  /* gris de fondo, como el buscador de empleos */
 ```
+
+El logo "magneto empleos" está recreado con tipografía (Baloo 2) y CSS a
+partir del logo oficial: "m" en dos tonos de verde, letras en morado y
+"empleos" en verde. Si se prefiere el asset vectorial oficial, basta con
+reemplazar el bloque `.logo__stack` en `index.html` por el SVG del manual.
 
 Pendientes para ajustar con el manual de identidad definitivo:
 
-- [ ] Reemplazar el logo placeholder (SVG inline en `index.html`, marcado con
-      `TODO`) por el logo oficial del manual.
 - [ ] Confirmar hex exactos y tipografía del manual (hoy se usa Poppins con
-      fallback del sistema; se carga desde Google Fonts).
+      fallback del sistema y Baloo 2 para el logo; se cargan desde Google Fonts).
 - [ ] Reemplazar los nombres de empresas por sus logos oficiales autorizados
       (sección `#empresas`, marcada con `TODO`).
 - [ ] Verificar la URL real de la Política de Tratamiento de Datos

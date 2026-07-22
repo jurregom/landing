@@ -1,15 +1,16 @@
 /* ==========================================================================
    Magneto · Landing Talento en Salud
-   Paleta según identidad Magneto: verde malaquita, azul profundo y blanco.
+   Paleta según identidad Magneto: verdes del logo, morado profundo y blanco.
    Ajusta estos tokens con los valores exactos del manual de identidad.
    ========================================================================== */
 
 :root {
   --green: #0cbb4e;
+  --green-bright: #1bd15f; /* verde claro del logo (m izquierda / "empleos") */
   --green-dark: #09a041;
   --green-soft: #e7f9ee;
-  --navy: #1a324c;
-  --navy-dark: #12253a;
+  --navy: #2b1656;      /* morado profundo del logo Magneto */
+  --navy-dark: #1e0f3f;
   --ink: #22303e;
   --gray: #5b6b7b;
   --gray-light: #8a97a5;
@@ -121,15 +122,35 @@ button:focus-visible {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
+  gap: 0.6rem;
   text-decoration: none;
 }
-.logo__icon { width: 34px; height: 34px; }
+.logo__stack {
+  display: grid;
+  justify-items: end;
+}
 .logo__word {
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-family: "Baloo 2", var(--font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
   color: var(--navy);
+}
+.logo__m {
+  background: linear-gradient(90deg, var(--green-bright) 52%, var(--green) 52%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.logo__sub {
+  font-family: "Baloo 2", var(--font);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--green-bright);
+  margin-top: -0.12em;
 }
 .logo--light .logo__word { color: var(--white); }
 .logo__tag {

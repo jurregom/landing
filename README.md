@@ -1,0 +1,65 @@
+# Landing · Banco de Talento en Salud — Magneto
+
+Landing page sencilla y práctica para que profesionales del sector salud
+(médicos, enfermeros(as), instrumentadores(as), auxiliares, bacteriólogos(as)…)
+dejen su hoja de vida en el banco de talento de Magneto para empresas como
+SURA, Hospital Pablo Tobón Uribe y Fundación Santa Fe de Bogotá.
+
+## Estructura
+
+```
+index.html            → Página completa (una sola landing)
+assets/css/styles.css → Estilos con tokens de marca en :root
+assets/js/main.js     → Lógica del modal de registro por pasos
+```
+
+Es 100% estática: no requiere build ni dependencias. Para verla localmente:
+
+```bash
+npx serve .   # o simplemente abrir index.html en el navegador
+```
+
+## Flujo de registro (modal)
+
+1. **Registro rápido** — nombre completo, teléfono (+57), correo y checkbox
+   obligatorio de aceptación de tratamiento de datos personales.
+2. **Éxito** — confirmación con el nombre de la persona y opción de continuar.
+3. **Perfil opcional** — profesión, especialidad, ciudad, experiencia,
+   registro ReTHUS y adjuntar hoja de vida. Puede cerrarse en cualquier momento.
+4. **Final** — confirmación de perfil guardado.
+
+El modal es accesible: `role="dialog"`, foco atrapado, cierre con `Esc`,
+validación con mensajes en español y estados `aria-invalid`.
+
+## Integración de datos
+
+Todo el envío pasa por una sola función en `assets/js/main.js`:
+
+```js
+function submitToBackend(payload) { … }
+```
+
+Hoy persiste en `localStorage` (clave `magneto-salud-registro`).
+Para conectar el backend/CRM/API de Magneto, reemplaza el cuerpo de esa
+función por un `fetch` POST al endpoint correspondiente.
+
+## Marca
+
+Los colores están centralizados como variables CSS en `styles.css`:
+
+```css
+--green: #0cbb4e;   /* verde malaquita Magneto (CTA) */
+--navy:  #1a324c;   /* azul profundo Magneto */
+--bg:    #f4f6f9;   /* gris de fondo, como el buscador de empleos */
+```
+
+Pendientes para ajustar con el manual de identidad definitivo:
+
+- [ ] Reemplazar el logo placeholder (SVG inline en `index.html`, marcado con
+      `TODO`) por el logo oficial del manual.
+- [ ] Confirmar hex exactos y tipografía del manual (hoy se usa Poppins con
+      fallback del sistema; se carga desde Google Fonts).
+- [ ] Reemplazar los nombres de empresas por sus logos oficiales autorizados
+      (sección `#empresas`, marcada con `TODO`).
+- [ ] Verificar la URL real de la Política de Tratamiento de Datos
+      (hoy apunta a `magneto365.com/co/politica-de-privacidad`).

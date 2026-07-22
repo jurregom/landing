@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talento en Salud | Magneto — Deja tu hoja de vida</title>
+  <meta name="description" content="Únete al banco de talento en salud de Magneto. Médicos, enfermeros, instrumentadores y más profesionales conectan con empresas como SURA, Hospital Pablo Tobón Uribe y Fundación Santa Fe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#" aria-label="Magneto — inicio">
+        <!-- TODO: reemplazar por el logo oficial del manual de identidad -->
+        <svg class="logo__icon" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="var(--green)"/>
+          <path d="M10 29V13.5c0-1.4 1.7-2 2.6-1L20 21l7.4-8.5c.9-1 2.6-.4 2.6 1V29h-5v-8l-5 6-5-6v8z" fill="#fff"/>
+        </svg>
+        <span class="logo__word">magneto</span>
+        <span class="logo__tag">salud</span>
+      </a>
+      <nav class="header__nav" aria-label="Navegación principal">
+        <a href="#profesiones" class="header__link">Profesiones</a>
+        <a href="#como-funciona" class="header__link">Cómo funciona</a>
+        <a href="#empresas" class="header__link">Empresas</a>
+      </nav>
+      <button class="btn btn--primary btn--sm" data-open-modal>Deja tu hoja de vida</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <span class="chip chip--green">Banco de talento · Sector salud</span>
+          <h1 class="hero__title">Tu vocación es cuidar.<br />La nuestra, <em>conectarte</em> con el empleo que mereces.</h1>
+          <p class="hero__subtitle">
+            Deja tu hoja de vida en el banco de talento en salud de Magneto y sé visible para
+            las instituciones más importantes del país. Gratis, rápido y confidencial.
+          </p>
+          <div class="hero__actions">
+            <button class="btn btn--primary btn--lg" data-open-modal>Dejar mi hoja de vida</button>
+            <a class="btn btn--ghost btn--lg" href="#como-funciona">¿Cómo funciona?</a>
+          </div>
+          <ul class="hero__stats" aria-label="Cifras de Magneto">
+            <li><strong>+8.000</strong><span>empresas confían en Magneto</span></li>
+            <li><strong>+1 millón</strong><span>de candidatos registrados</span></li>
+            <li><strong>1 minuto</strong><span>es lo que toma registrarte</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <article class="jobcard jobcard--back">
+            <header class="jobcard__top">
+              <span class="jobcard__logo" style="--c:#0033A0">HP</span>
+              <div>
+                <h3>Instrumentador(a) quirúrgico(a)</h3>
+                <p>Hospital Pablo Tobón Uribe · Medellín</p>
+              </div>
+            </header>
+            <p class="jobcard__salary">$3,5 a $4 millones</p>
+            <div class="jobcard__tags"><span>Tiempo completo</span><span>Presencial</span></div>
+          </article>
+          <article class="jobcard jobcard--front">
+            <header class="jobcard__top">
+              <span class="jobcard__logo" style="--c:#00AEC7">S</span>
+              <div>
+                <h3>Enfermero(a) profesional UCI</h3>
+                <p>SURA · Bogotá D.C.</p>
+              </div>
+            </header>
+            <p class="jobcard__salary">$4 a $5 millones</p>
+            <div class="jobcard__tags"><span>Término indefinido</span><span>Turnos</span></div>
+            <button class="btn btn--primary btn--sm jobcard__cta" data-open-modal tabindex="-1">Postularme</button>
+          </article>
+          <article class="jobcard jobcard--mini">
+            <header class="jobcard__top">
+              <span class="jobcard__logo" style="--c:#C8102E">FSF</span>
+              <div>
+                <h3>Médico(a) general urgencias</h3>
+                <p>Fundación Santa Fe · Bogotá D.C.</p>
+              </div>
+            </header>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMPRESAS ============ -->
+    <section class="companies" id="empresas">
+      <div class="container">
+        <p class="companies__label">Empresas que buscan talento como el tuyo</p>
+        <!-- TODO: reemplazar por logos oficiales autorizados de cada institución -->
+        <ul class="companies__list">
+          <li>SURA</li>
+          <li>Hospital Pablo Tobón Uribe</li>
+          <li>Fundación Santa Fe de Bogotá</li>
+          <li class="companies__more">y muchas más…</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROFESIONES ============ -->
+    <section class="section" id="profesiones">
+      <div class="container">
+        <header class="section__head">
+          <h2>Buscamos profesionales como tú</h2>
+          <p>Si trabajas en el sector salud, hay una oportunidad esperándote.</p>
+        </header>
+        <div class="roles">
+          <button class="role" data-open-modal data-role="Médico/a">
+            <span class="role__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 3v6a5 5 0 0 0 10 0V3M8 3h1M14 3h1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M11 14v3a4 4 0 0 0 8 0v-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="19" cy="13" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
+            <span class="role__name">Médicos</span>
+            <span class="role__hint">Generales y especialistas</span>
+          </button>
+          <button class="role" data-open-modal data-role="Enfermero/a">
+            <span class="role__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 8v6M9 11h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <span class="role__name">Enfermeros(as)</span>
+            <span class="role__hint">Profesionales y jefes</span>
+          </button>
+          <button class="role" data-open-modal data-role="Instrumentador/a quirúrgico/a">
+            <span class="role__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20L14.5 9.5M20 20L9.5 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="7" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
+            <span class="role__name">Instrumentadores(as)</span>
+            <span class="role__hint">Quirúrgicos</span>
+          </button>
+          <button class="role" data-open-modal data-role="Auxiliar de enfermería">
+            <span class="role__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.2-9A5.2 5.2 0 0 1 12 6.5 5.2 5.2 0 0 1 21.2 12C19 16.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v5M9.5 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <span class="role__name">Auxiliares</span>
+            <span class="role__hint">De enfermería y farmacia</span>
+          </button>
+          <button class="role" data-open-modal data-role="Bacteriólogo/a">
+            <span class="role__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 3v6l-5 9a2 2 0 0 0 1.8 3h12.4A2 2 0 0 0 20 18l-5-9V3M7.5 3h9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.5 15h9" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
+            <span class="role__name">Bacteriólogos(as)</span>
+            <span class="role__hint">Y personal de laboratorio</span>
+          </button>
+          <button class="role" data-open-modal data-role="Otra profesión de la salud">
+            <span class="role__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12h4l2.5-6 4 12 2.5-6h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="role__name">Y más perfiles</span>
+            <span class="role__hint">Fisioterapia, odontología, psicología…</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section section--gray" id="como-funciona">
+      <div class="container">
+        <header class="section__head">
+          <h2>Así de fácil funciona</h2>
+          <p>Tres pasos para estar más cerca de tu próximo empleo.</p>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Regístrate en 1 minuto</h3>
+            <p>Solo necesitamos tu nombre, teléfono y correo. Sin formularios eternos.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Completa tu perfil si quieres</h3>
+            <p>Agrega tu profesión, experiencia y hoja de vida cuando tú lo decidas.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>Las empresas te encuentran</h3>
+            <p>Instituciones de salud de todo el país acceden al banco de talento y te contactan.</p>
+          </li>
+        </ol>
+        <div class="section__cta">
+          <button class="btn btn--primary btn--lg" data-open-modal>Quiero registrarme</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENEFICIOS ============ -->
+    <section class="section">
+      <div class="container">
+        <header class="section__head">
+          <h2>¿Por qué dejar tu hoja de vida aquí?</h2>
+        </header>
+        <div class="benefits">
+          <article class="benefit">
+            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <h3>100% gratuito</h3>
+            <p>Registrarte y participar en procesos de selección nunca tendrá costo.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <h3>Confidencial y seguro</h3>
+            <p>Tus datos se tratan según la ley de protección de datos personales.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <h3>Oportunidades reales</h3>
+            <p>Acceso directo a vacantes de las instituciones de salud líderes del país.</p>
+          </article>
+          <article class="benefit">
+            <span class="benefit__icon" aria-hidden="true">✓</span>
+            <h3>Tú tienes el control</h3>
+            <p>Edita tu perfil cuando quieras y decide qué información compartir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <h2>El sector salud te necesita.<br />Nosotros te acercamos.</h2>
+        <button class="btn btn--primary btn--lg" data-open-modal>Dejar mi hoja de vida ahora</button>
+        <p class="cta-band__note">Registro gratuito · Toma menos de 1 minuto</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--light" href="#" aria-label="Magneto — inicio">
+        <svg class="logo__icon" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="11" fill="var(--green)"/>
+          <path d="M10 29V13.5c0-1.4 1.7-2 2.6-1L20 21l7.4-8.5c.9-1 2.6-.4 2.6 1V29h-5v-8l-5 6-5-6v8z" fill="#fff"/>
+        </svg>
+        <span class="logo__word">magneto</span>
+      </a>
+      <nav class="footer__links" aria-label="Enlaces legales">
+        <a href="https://www.magneto365.com/co" target="_blank" rel="noopener">magneto365.com</a>
+        <a href="https://www.magneto365.com/co/politica-de-privacidad" target="_blank" rel="noopener">Política de tratamiento de datos</a>
+      </nav>
+      <p class="footer__copy">© 2026 Magneto Global S.A.S. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL DE REGISTRO ============ -->
+  <div class="modal" id="registro-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__card" role="document">
+      <button class="modal__close" type="button" data-close-modal aria-label="Cerrar">&times;</button>
+
+      <!-- Paso 1: registro rápido -->
+      <section class="modal__step" data-step="registro">
+        <header class="modal__head">
+          <h2 id="modal-title">Únete al banco de talento en salud</h2>
+          <p>Te tomará menos de un minuto. Las empresas del sector podrán encontrarte.</p>
+        </header>
+        <form id="registro-form" novalidate>
+          <div class="field">
+            <label for="f-nombre">Nombre completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="f-nombre" name="nombre" autocomplete="name" required
+                   placeholder="Ej: Laura Gómez Restrepo" minlength="5" />
+            <p class="field__error" hidden>Escribe tu nombre completo.</p>
+          </div>
+          <div class="field">
+            <label for="f-telefono">Número de teléfono <span aria-hidden="true">*</span></label>
+            <div class="field__phone">
+              <span class="field__prefix" aria-hidden="true">+57</span>
+              <input type="tel" id="f-telefono" name="telefono" autocomplete="tel-national" required
+                     inputmode="numeric" placeholder="300 123 4567" pattern="[0-9\s]{7,13}" />
+            </div>
+            <p class="field__error" hidden>Ingresa un número de teléfono válido.</p>
+          </div>
+          <div class="field">
+            <label for="f-correo">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input type="email" id="f-correo" name="correo" autocomplete="email" required
+                   placeholder="tucorreo@ejemplo.com" />
+            <p class="field__error" hidden>Ingresa un correo electrónico válido.</p>
+          </div>
+          <div class="field field--check">
+            <label class="check">
+              <input type="checkbox" id="f-datos" name="aceptaDatos" required />
+              <span>He leído y acepto la
+                <a href="https://www.magneto365.com/co/politica-de-privacidad" target="_blank" rel="noopener">Política de Tratamiento de Datos Personales</a>
+                y autorizo a Magneto y a las empresas del banco de talento a contactarme para procesos de selección. *</span>
+            </label>
+            <p class="field__error" hidden>Debes aceptar el tratamiento de datos para continuar.</p>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Enviar mi hoja de vida</button>
+          <p class="modal__fineprint">Nunca compartiremos tus datos sin tu autorización.</p>
+        </form>
+      </section>
+
+      <!-- Paso 2: éxito -->
+      <section class="modal__step" data-step="exito" hidden>
+        <div class="modal__success">
+          <span class="modal__check" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2>¡Listo, <span data-nombre>ya estás dentro</span>!</h2>
+          <p>Tu registro quedó guardado en el banco de talento en salud.
+             ¿Quieres completar tu perfil para que las empresas te encuentren más rápido?</p>
+          <button type="button" class="btn btn--primary btn--lg btn--block" data-goto-perfil>Completar mi perfil</button>
+          <button type="button" class="btn btn--ghost btn--block" data-close-modal>Por ahora no, gracias</button>
+        </div>
+      </section>
+
+      <!-- Paso 3: perfil (opcional) -->
+      <section class="modal__step" data-step="perfil" hidden>
+        <header class="modal__head">
+          <span class="chip chip--green">Opcional · Puedes editarlo cuando quieras</span>
+          <h2>Completa tu perfil profesional</h2>
+        </header>
+        <form id="perfil-form" novalidate>
+          <div class="field">
+            <label for="p-profesion">Profesión</label>
+            <select id="p-profesion" name="profesion">
+              <option value="">Selecciona tu profesión</option>
+              <option>Médico/a</option>
+              <option>Enfermero/a</option>
+              <option>Instrumentador/a quirúrgico/a</option>
+              <option>Auxiliar de enfermería</option>
+              <option>Bacteriólogo/a</option>
+              <option>Fisioterapeuta</option>
+              <option>Odontólogo/a</option>
+              <option>Psicólogo/a</option>
+              <option>Otra profesión de la salud</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="p-especialidad">Especialidad o área (opcional)</label>
+            <input type="text" id="p-especialidad" name="especialidad" placeholder="Ej: UCI, urgencias, cirugía…" />
+          </div>
+          <div class="field field--row">
+            <div>
+              <label for="p-ciudad">Ciudad</label>
+              <input type="text" id="p-ciudad" name="ciudad" autocomplete="address-level2" placeholder="Ej: Medellín" />
+            </div>
+            <div>
+              <label for="p-experiencia">Años de experiencia</label>
+              <select id="p-experiencia" name="experiencia">
+                <option value="">Selecciona</option>
+                <option>Menos de 1 año</option>
+                <option>1 a 3 años</option>
+                <option>3 a 5 años</option>
+                <option>5 a 10 años</option>
+                <option>Más de 10 años</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="p-rethus">Registro ReTHUS / tarjeta profesional (opcional)</label>
+            <input type="text" id="p-rethus" name="rethus" placeholder="Número de registro" />
+          </div>
+          <div class="field">
+            <label for="p-cv">Adjunta tu hoja de vida (PDF, opcional)</label>
+            <input type="file" id="p-cv" name="cv" accept=".pdf,.doc,.docx" />
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Guardar mi perfil</button>
+          <button type="button" class="btn btn--ghost btn--block" data-close-modal>Guardar y salir</button>
+        </form>
+      </section>
+
+      <!-- Paso 4: perfil guardado -->
+      <section class="modal__step" data-step="final" hidden>
+        <div class="modal__success">
+          <span class="modal__check" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2>¡Perfil guardado!</h2>
+          <p>Gracias por confiar en Magneto. Las mejores instituciones de salud del país ya pueden encontrarte.</p>
+          <button type="button" class="btn btn--primary btn--lg btn--block" data-close-modal>Entendido</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
